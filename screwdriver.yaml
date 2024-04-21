@@ -1,0 +1,10 @@
+shared:
+  image: node:20
+
+subscribe:
+    scmUrls:
+        - https://github.com/VonnyJap/test-subscribe-parent.git: ['~pr']
+jobs:
+  random:
+    template: sd/noop@latest
+    requires: [~pr, ~commit, ~subscribe]
