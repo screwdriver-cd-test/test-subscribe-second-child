@@ -3,7 +3,7 @@ shared:
 
 subscribe:
     scmUrls:
-        - https://github.com/VonnyJap/test-subscribe-parent.git: ['~pr']
+        - https://github.com/screwdriver-cd-test/test-subscribe-parent.git: ['~pr']
 jobs:
   random:
     template: sd/noop@latest
